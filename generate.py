@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 if __name__ == "__main__":
-    prompt = sys.argv[1]
+    prompt = input('prompt: ')
     log.info(f'prompt={prompt}')
     t0 = time.time()
     pipe = JanusPipeline(
